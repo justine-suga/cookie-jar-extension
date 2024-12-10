@@ -8,8 +8,6 @@
   },
   "host_permissions": [
     "https://*/*",
-    "https://api.pwnedpasswords.com/*",
-    "https://raw.githubusercontent.com/*"
   ],
   "action": {
     "default_popup": "popup.html",
