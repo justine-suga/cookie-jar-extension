@@ -7,7 +7,6 @@
     "service_worker": "background.js"
   },
   "host_permissions": [
-    "https://haveibeenpwned.com/*",
     "https://*/*",
     "https://api.pwnedpasswords.com/*",
     "https://raw.githubusercontent.com/*"
