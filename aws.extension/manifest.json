@@ -1,0 +1,29 @@
+{
+  "name": "Cookie Monster",
+  "description": "Hide your cookies... Oops, you can't.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://haveibeenpwned.com/*",
+    "https://*/*",
+    "https://api.pwnedpasswords.com/*",
+    "https://raw.githubusercontent.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "notifications", "scripting", "webNavigation", "storage", "activeTab", "tabs", "cookies"
+  ]  
+}
